@@ -1,12 +1,12 @@
 {
-  "name": "remove-special-quotes",
+  "name": "replace-special-quotes",
   "version": "0.0.0-development",
   "description": "Remove special quotes from stdin",
   "files": [
     "index.js"
   ],
   "bin": {
-    "remove-special-quotes": "./index.js"
+    "replace-special-quotes": "./index.js"
   },
   "scripts": {
     "prepare": "husky install",
