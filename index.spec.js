@@ -32,11 +32,11 @@ describe('All', () => {
 
     it('should convert “<some-string>” to "<some-string>"', async () => {
       const someString = faker.lorem.text();
-      const badString = `“${someString}“`;
+      const badString = `“${someString}”`;
 
       const cleanedString = await runCliAllInputAtOnce(badString);
 
-      expect(cleanedString).toEqual(`"${someString}”`);
+      expect(cleanedString).toEqual(`"${someString}"”"`);
     });
   });
 });
