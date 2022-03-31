@@ -38,5 +38,21 @@ describe('All', () => {
 
       expect(cleanedString).toEqual(`"${someString}"`);
     });
+
+    it('should convert “”„ to """', async () => {
+      const badString = `“”„`;
+
+      const cleanedString = await runCliAllInputAtOnce(badString);
+
+      expect(cleanedString).toEqual(`"""`);
+    });
+
+    it(`should convert ‘’‚ to '''`, async () => {
+      const badString = `‘’‚`;
+
+      const cleanedString = await runCliAllInputAtOnce(badString);
+
+      expect(cleanedString).toEqual(`'''`);
+    });
   });
 });

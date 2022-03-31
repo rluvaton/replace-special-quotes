@@ -5,9 +5,11 @@ const args = process.argv.splice(2);
 if (args.some((arg) => arg === '-h' || arg === '--help')) {
   console.log(
     `Usage: <output some text> | replace-special-quotes
+- Replace “”„ with "
+- Replace ‘’‚ with '
 
    Flags:
-      -h: print this help
+      -h, --help: print this help
 
    Usage example:
       Pipe text:
@@ -25,5 +27,15 @@ if (args.some((arg) => arg === '-h' || arg === '--help')) {
 }
 
 process.stdin.on('data', (data) => {
-  process.stdout.write(data.toString().replace(/[“”]/g, '"'));
+  process.stdout.write(
+    data
+      // Force prettier to keep it multiline
+      .toString()
+
+      // Replace left and right double quote and double low-9 quote with regular quotes
+      .replace(/[“”„]/g, '"')
+
+      // Replace left and right single quote and single low-9 quote with regular single quotes
+      .replace(/[‘’‚]/g, "'"),
+  );
 });
