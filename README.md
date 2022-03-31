@@ -1,10 +1,11 @@
-# NodeJS Boilerplate
+# Remove Special Quotes from stdin
 
-## Features:
-- TypeScript
-- Jest
-- ESLint
-- Prettier
-- Husky
-- CommitLint
-- CI in GitHub Action
+**Install:**
+
+```bash
+npm i -g replace-special-quotes
+```
+
+## Usage:
+
+![usage](./assets/usage.png)
