@@ -1,4 +1,5 @@
 # Remove Special Quotes from stdin
+![npm](https://img.shields.io/npm/v/replace-special-quotes)
 
 **Install:**
 
