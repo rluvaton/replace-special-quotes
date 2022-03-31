@@ -15,8 +15,7 @@
     "test": "jest --passWithNoTests",
     "watch": "jest --watch",
     "format": "prettier --write \"./**/*.js\"",
-    "lint": "eslint \"./**/*.js\" --fix",
-    "semantic-release": "semantic-release"
+    "lint": "eslint \"./**/*.js\" --fix"
   },
   "devDependencies": {
     "@commitlint/cli": "^15.0.0",
@@ -28,8 +27,7 @@
     "husky": "^7.0.4",
     "jest": "^27.4.5",
     "prettier": "^2.5.1",
-    "tmp": "^0.2.1",
-    "semantic-release": "^17.4.3"
+    "tmp": "^0.2.1"
   },
   "repository": {
     "type": "git",
