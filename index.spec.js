@@ -36,7 +36,7 @@ describe('All', () => {
 
       const cleanedString = await runCliAllInputAtOnce(badString);
 
-      expect(cleanedString).toEqual(`"${someString}"`);
+      expect(cleanedString).toEqual(`"${someString}”`);
     });
   });
 });

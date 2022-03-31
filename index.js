@@ -25,5 +25,5 @@ if (args.some((arg) => arg === '-h' || arg === '--help')) {
 }
 
 process.stdin.on('data', (data) => {
-  process.stdout.write(data.toString().replace(/“/g, '"'));
+  process.stdout.write(data.toString().replace(/[“”]/g, '"'));
 });
