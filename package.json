@@ -14,8 +14,8 @@
     "coverage": "jest --coverage",
     "test": "jest --passWithNoTests",
     "watch": "jest --watch",
-    "format": "prettier --write \"src/**/*.js\"",
-    "lint": "eslint \"src/**/*.js\" --fix",
+    "format": "prettier --write \"./**/*.js\"",
+    "lint": "eslint \"./**/*.js\" --fix",
     "semantic-release": "semantic-release"
   },
   "devDependencies": {
